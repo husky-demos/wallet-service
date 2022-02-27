@@ -15,5 +15,5 @@ message Wallet{
   string coinTypeId = 3;
   double availableBalance = 4;
   double freezeBalance = 5;
-  double isLocking = 6;
+  bool isLocking = 6;
 }
