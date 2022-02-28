@@ -10,7 +10,6 @@ type WalletService struct {
 }
 
 func (s *WalletService) QueryByUserId(ctx context.Context, userId *v1.Id) (*v1.Wallet, error) {
-	println("UserId:", userId.Value)
 	if userId.Value != "123" {
 		return nil, utils.NewError(100, "用户不存在")
 	} else {
